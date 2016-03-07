@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    >
+<ImageView
+    android:id="@+id/activityPicUrl"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:src="@mipmap/ic_launcher"/>
+    <RelativeLayout
+        android:id="@+id/honor_time_buy"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/activityPicUrl"
+        android:padding="5dp"
+        android:background="#fff">
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:orientation="vertical"
+          android:layout_centerVertical="true">
+          <TextView
+              android:id="@+id/activityTime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="10月20日 10:08"
+              android:textColor="#000"
+              android:textSize="16sp"/>
+          <TextView
+              android:id="@+id/activityDescription"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="10月20日 10:08准点开售"/>
+      </LinearLayout>
+
+        <Button
+            android:id="@+id/honor_wait_buy"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="等待抢购"
+            android:focusable="false"/>
+        <Button
+            android:id="@+id/honor_onClock_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/honor_wait_buy"
+            android:text="闹钟提醒"
+            android:focusable="false"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/honor_time_buy"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        />
+    <RelativeLayout
+        android:layout_below="@id/line1"
+        android:id="@+id/accessories"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#fff">
+        <ImageView
+            android:id="@+id/fittingPicUrl"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerVertical="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/fittingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="荣耀7专属配件"
+                android:textSize="16sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/fittingDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保护膜"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

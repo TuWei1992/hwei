@@ -1,0 +1,27 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="app.jredu.com.electronicbusinessplatform.fragment.HonorFragment"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+   <com.handmark.pulltorefresh.library.PullToRefreshListView
+       android:id="@+id/mListView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:clickable="true"
+       >
+
+   </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    <ImageButton
+        android:id="@+id/backToTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/backtotop"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>
+</RelativeLayout>
+

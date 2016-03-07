@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    android:background="#fff">
+    <RelativeLayout
+        android:id="@+id/more_other"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/commonFittingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:text="通用配件"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginLeft="8dp"/>
+        <ImageView
+            android:id="@+id/honor_more_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/honor_more_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_below="@id/more_other"/>
+
+
+
+
+
+
+
+</RelativeLayout>
